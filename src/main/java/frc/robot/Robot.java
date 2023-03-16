@@ -4,7 +4,7 @@
 
 package frc.robot;
 
-import com.ctre.phoenix.motorcontrol.can.VictorSPX;
+import com.ctre.phoenix.motorcontrol.can.WPI_VictorSPX;
 import com.revrobotics.CANSparkMax;
 import com.revrobotics.CANSparkMaxLowLevel.MotorType;
 
@@ -32,8 +32,8 @@ public class Robot extends TimedRobot {
 
    CANSparkMax driveLeftSpark = new CANSparkMax(1, MotorType.kBrushed);
    CANSparkMax driveRightSpark = new CANSparkMax(2, MotorType.kBrushed);
-   VictorSPX driveLeftVictor = new VictorSPX(3);
-   VictorSPX driveRightVictor = new VictorSPX(4);
+   WPI_VictorSPX driveLeftVictor = new WPI_VictorSPX(3);
+   WPI_VictorSPX driveRightVictor = new WPI_VictorSPX(4);
 
    Joystick mJoystick = new Joystick(0);
    
